@@ -1,0 +1,39 @@
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 25.6         |
+|    ep_rew_mean          | -2.54e+03    |
+| time/                   |              |
+|    fps                  | 3250         |
+|    iterations           | 79           |
+|    time_elapsed         | 6            |
+|    total_timesteps      | 20224        |
+| train/                  |              |
+|    approx_kl            | 0.0011642191 |
+|    clip_fraction        | 0            |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -2.26        |
+|    explained_variance   | 1.19e-07     |
+|    learning_rate        | 0.0003       |
+|    loss                 | 4.27e+05     |
+|    n_updates            | 780          |
+|    policy_gradient_loss | -0.00537     |
+|    value_loss           | 9.46e+05     |
+------------------------------------------
+
+Optimal Route:
+L0 -> L2 -> L1 -> L4 -> L8 -> L7 -> L9 -> L5 -> L3 -> L6 -> L0
+Energy Consumption (per hop):
+L0 -> L2: 22.00 units
+L2 -> L1: 49.00 units
+L1 -> L4: 29.40 units
+L4 -> L8: 114.40 units
+L8 -> L7: 70.00 units
+L7 -> L9: 27.20 units
+L9 -> L5: 124.80 units
+L5 -> L3: 14.00 units
+L3 -> L6: 92.00 units
+L6 -> L0: 9.00 units
+
+Total Energy Used: 551.80 units
+
+// it is working till 79 iterations
