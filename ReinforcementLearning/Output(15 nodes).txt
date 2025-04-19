@@ -1,0 +1,43 @@
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 46.7         |
+|    ep_rew_mean          | -4.63e+03    |
+| time/                   |              |
+|    fps                  | 2910         |
+|    iterations           | 79           |
+|    time_elapsed         | 6            |
+|    total_timesteps      | 20224        |
+| train/                  |              |
+|    approx_kl            | 9.562541e-05 |
+|    clip_fraction        | 0            |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -2.7         |
+|    explained_variance   | -2.38e-07    |
+|    learning_rate        | 0.0003       |
+|    loss                 | 1.27e+06     |
+|    n_updates            | 780          |
+|    policy_gradient_loss | -0.00109     |
+|    value_loss           | 2.52e+06     |
+------------------------------------------
+
+Optimal Route:
+L0 -> L3 -> L2 -> L12 -> L9 -> L4 -> L8 -> L6 -> L7 -> L5 -> L13 -> L14 -> L1 -> L10 -> L11 -> L0
+
+Energy Consumption (per hop):
+L0 -> L3: 13.00 units
+L3 -> L2: 67.20 units
+L2 -> L12: 46.20 units
+L12 -> L9: 88.20 units
+L9 -> L4: 9.60 units
+L4 -> L8: 38.40 units
+L8 -> L6: 18.00 units
+L6 -> L7: 84.00 units
+L7 -> L5: 86.40 units
+L5 -> L13: 115.20 units
+L13 -> L14: 58.00 units
+L14 -> L1: 63.00 units
+L1 -> L10: 52.80 units
+L10 -> L11: 25.60 units
+L11 -> L0: 92.40 units
+
+Total Energy Used: 858.00 units
