@@ -96,7 +96,7 @@ if __name__ == "__main__":
     # Read test case from file
     distance_matrix = []
     weights = []
-    with open("test_case_15_nodes.txt") as file:
+    with open("test_case_17_nodes.txt") as file:
         lines = file.readlines()
         parsing_matrix = False
         for line in lines:
