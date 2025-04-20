@@ -1,0 +1,7 @@
+Code execution started at: 2025-04-20 17:39:03
+
+Optimal Route (using Genetic Algorithm):
+L0 -> L11 -> L3 -> L5 -> L15 -> L14 -> L8 -> L10 -> L16 -> L6 -> L12 -> L13 -> L1 -> L9 -> L7 -> L2 -> L4 -> L0 -> Depot
+Total Energy: 1113.3999999999999 units
+Code execution ended at: 2025-04-20 17:39:03
+Total execution time: 0:00:00.067954

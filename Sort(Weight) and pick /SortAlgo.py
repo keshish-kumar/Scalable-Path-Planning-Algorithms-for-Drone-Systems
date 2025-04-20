@@ -49,16 +49,16 @@ def alternate_route_algorithm(weights, distance_matrix, battery_capacity, base_p
     
     return route, total_energy
 
-def read_test_case(filename="test_case_15_nodes.txt"):
+def read_test_case(filename="test_case_17_nodes.txt"):
     with open(filename, "r") as file:
         lines = file.readlines()
     
     distance_matrix = []
-    for line in lines[1:16]:  # Adjusted for 10 nodes
+    for line in lines[1:18]:  # Adjusted for 10 nodes
         row = list(map(float, line.strip().split()))
         distance_matrix.append(row)
     
-    weights_line = lines[18].strip()  # Adjusted for 10 nodes
+    weights_line = lines[20].strip()  # Adjusted for 10 nodes
     weights = list(map(float, weights_line.split()))
     
     return distance_matrix, weights

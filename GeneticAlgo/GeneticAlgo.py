@@ -101,18 +101,18 @@ def genetic_algorithm(num_nodes, weights, distance_matrix, battery_capacity, bas
     
     return best_route, min_energy
 
-def read_test_case(filename="test_case_15_nodes.txt"):
+def read_test_case(filename="test_case_17_nodes.txt"):
     with open(filename, "r") as file:
         lines = file.readlines()
     
     # Read distance matrix
     distance_matrix = []
-    for line in lines[1:16]:  # Assuming 10 nodes (10 lines after the header)
+    for line in lines[1:18]:  # Assuming n nodes (n lines after the header)
         row = list(map(float, line.strip().split()))
         distance_matrix.append(row)
     
     # Read weights
-    weights_line = lines[18].strip()  # Assuming weights are on the 13th line
+    weights_line = lines[20].strip()  # Assuming weights are on the 13th line
     weights = list(map(float, weights_line.split()))
     
     return distance_matrix, weights
